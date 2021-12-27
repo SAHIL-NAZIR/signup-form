@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script defer src="index.js"></script>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background: #083055;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    h1{
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"]{
+      width: 100%;
+      padding: 0.5rem;
+      border: none;
+      border-bottom: 1px solid #fff;
+      background: transparent;
+      color: #fff;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"]:focus{
+      outline: none;
+    }
+    label{
+      font-size: 1rem;
+    }
+    button{
+      width: 100%;
+      padding: 1rem;
+      border: none;
+      color: #083055;
+      background: #fff;
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.15s;
+    }
+    button:hover{
+      background: transparent;
+      color: #ffffff;
+      outline: auto;
+    }
+    #error{
+      color: #ff5100;
+      font-size: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Sign Up with your email</h1>
+  </div>
+  <div id="error"></div>
+  <form action="/" method="get" id="form">
+    <div>
+      <label for="name">name</label>
+      <input id="name" name="name" type="text">
+    </div>
+    <div>
+      <label for="email">email</label>
+      <input id="email" name="email" type="text">
+    </div>
+    <div>
+      <label for="password">password</label>
+      <input id="password" name="password" type="password">
+    </div>
+    <div>
+      <input type="checkbox" name="terms" id="terms">
+      <label for="terms">I agree to the terms and conditions</label>
+    </div>
+    <button type="submit" id="btn">submit</button>
+  </form>
+</body>
+</html>
